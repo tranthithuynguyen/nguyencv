@@ -1,0 +1,85 @@
+:root {
+    /*Color:  */
+    --pink-color: #fecdd6; 
+    --pinkest-color: #ab3b61;
+    --orange-color: #fdd1b9;
+    --cyan-color: #64ffee;
+    --green-color: #91ff64;
+    --white-color: #ede2de;
+    --text-color: #4f4d4d;
+    --grey-text-color: #848484;
+    --grey-color: #e0e0e0;
+    --roboto-font: "Roboto Slab";
+    
+    /* Block sizing: */
+    --header-height: 50px; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.6;
+    color: var(--text-color);
+    font-family: "Roboto Slab", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.header-text {
+    font-size: 1.6em;
+    text-align: center;
+    font-weight: 900;
+    padding-top: .4em;
+    color: var(--pinkest-color);
+}
+
+.section-exp__btns,
+.section-pictures__btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exp-btn__prev,
+.exp-btn__next,
+.pictures-btn__prev,
+.pictures-btn__next {
+    width: 62px;
+    height: 62px;
+    font-size: 2.2em;
+    color: var(--white-color);
+    background-color: var(--pinkest-color);
+    text-align: center;
+    border-radius: 50%;
+    margin: 0px 12px;
+    cursor: pointer;
+}
+
+.pictures-btn__prev,
+.pictures-btn__next {
+    background-color: var(--white-color);
+    color: var(--pinkest-color);
+}
+
+.btn-link {
+    flex: 1;
+    font-size: 1.3em;
+    font-weight: 500;
+    background-color: var(--pinkest-color);
+    text-decoration: none;
+    color: var(--white-color);
+    padding: .8em 1.7rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-link:hover {
+    background-color: var(--pink-color);
+    color: var(--text-color);
+}
