@@ -276,6 +276,10 @@
     border-radius: 25px;
 }
 
+.about-section__skills-item:nth-child(1) .skills-percentages span {
+    width: 100%;
+}
+
 /* Experience section: */
 
 .section-exp {
@@ -318,7 +322,7 @@
 }
 
 .section-exp__item {
-    font-size: 1.2em;
+    font-size: 1em;
     width: 100%;
     border-radius: 10px;
     padding: 1.6em;
@@ -369,6 +373,7 @@
     margin-left: 1.3rem;
     list-style-type: none;
     margin-left: 0;
+    line-height: 1.6;
 }
 
 .section-exp__work-period {
@@ -410,7 +415,8 @@
 }
 
 .section-pictures__card-mobile-list {
-    width: 400%;
+    --list-images-length: 6;
+    width: calc(var(--list-images-length) * 100%);
     position: absolute;
     top: 0;
     left: 0;
